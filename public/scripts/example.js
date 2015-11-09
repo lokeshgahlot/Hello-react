@@ -33,14 +33,16 @@ var CommentForm = React.createClass({
 });
 
 var Comment = React.createClass({
-  return (
-    <div className='comment'>
-      <h2 className='commentAuther'>
-        {this.props.author}
-      </h2>
-      {this.props.children}
-    </div>
-  );
+  render: function() {
+    return (
+      <div className='comment'>
+        <h2 className='commentAuther'>
+          {this.props.author}
+        </h2>
+        {this.props.children}
+      </div>
+    );
+  }
 });
 
 
