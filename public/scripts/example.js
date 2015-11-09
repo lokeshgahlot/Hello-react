@@ -34,19 +34,22 @@ var CommentForm = React.createClass({
 });
 
 var Comment = React.createClass({
+  rawMarkup: function() {
+    var markup = marked(this.props.children.toString(), {sanitize: true});
+    return{__html: markup};
+  },
+
   render: function() {
     return (
       <div className='comment'>
         <h2 className='commentAuther'>
           {this.props.author}
         </h2>
-        {this.props.children}
+        <span dangerouslySetInnerHTML={this.rawMarkup()} />
       </div>
     );
   }
 });
-
-
 
 ReactDOM.render(
   <CommentBox/>,
