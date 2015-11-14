@@ -1,0 +1,15 @@
+[
+    {
+        "author": "Pete Hunt",
+        "text": "Hey there!"
+    },
+    {
+        "author": "Paul O’Shannessy",
+        "text": "React is *great*!"
+    },
+    {
+        "author": "Lokesh",
+        "text": "New comment",
+        "id": "1447532039042"
+    }
+]
